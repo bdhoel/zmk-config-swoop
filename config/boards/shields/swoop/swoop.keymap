@@ -14,6 +14,10 @@
 #define NAVG 3
 #define ADJT 4
 
+&mt {
+  tapping-term-ms = <400>;
+}; 
+
 / {
   // Activate ADJUST layer by pressing raise and lower
   conditional_layers {
@@ -23,10 +27,6 @@
             then-layer = <ADJT>;
         };
     };
-
-  &mt {
-    tapping-term-ms = <400>;
-  };  
 
   keymap {
     compatible = "zmk,keymap";
